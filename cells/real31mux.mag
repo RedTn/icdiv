@@ -1,0 +1,44 @@
+magic
+tech scmos
+timestamp 1385275645
+<< metal1 >>
+rect 113 127 156 135
+rect 109 3 159 10
+<< metal2 >>
+rect 67 135 71 145
+rect 75 136 79 146
+rect 118 114 124 144
+rect 128 110 132 143
+rect 111 105 132 110
+rect 138 138 216 143
+rect 138 89 143 138
+rect 212 137 216 138
+rect 220 136 224 144
+rect 264 116 269 140
+rect 275 112 280 140
+rect 259 108 280 112
+rect 136 88 143 89
+rect 67 -4 71 9
+rect 134 -4 143 88
+rect 67 -8 143 -4
+rect 211 -14 216 7
+use real21mux  real21mux_0
+timestamp 1385274550
+transform 1 0 18 0 1 72
+box -12 -72 106 65
+use real21mux  real21mux_1
+timestamp 1385274550
+transform 1 0 163 0 1 74
+box -12 -72 106 65
+<< labels >>
+rlabel metal2 67 135 71 145 1 C
+rlabel metal2 75 136 79 146 1 A
+rlabel metal2 119 137 123 144 1 s2b
+rlabel metal2 129 138 132 142 1 s2
+rlabel metal2 220 136 224 144 1 B
+rlabel metal1 128 131 139 133 1 Vdd
+rlabel metal1 120 4 137 9 1 GND
+rlabel metal2 212 -14 216 -3 1 O
+rlabel metal2 276 133 280 140 1 s1
+rlabel metal2 266 133 269 139 1 s1b
+<< end >>

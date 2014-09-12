@@ -1,0 +1,234 @@
+timestamp 1385973239
+version 7.5
+tech scmos
+style lambda=1.0(scna20_orb)
+scale 1000 1 100
+resistclasses 26670 59550 23860 19690 27260 2000000 49 26 2505830
+use transgate transgate_0 1 0 176 0 1 88
+use transgate transgate_1 1 0 207 0 1 114
+use transgate transgate_3 1 0 -91 0 -1 -5
+use transgate transgate_2 1 0 -50 0 -1 -5
+use reg1 reg1_0 1 0 25 0 1 27
+use reg1 reg1_1 1 0 122 0 1 27
+node "resetb" 1 8208 182 8 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 464 240 0 0
+node "xin" 4 61352 -105 -4 v 0 0 0 0 0 0 0 0 0 0 0 0 1100 566 572 302 0 0
+node "yin" 5 60224 -64 -4 v 0 0 0 0 0 0 0 0 0 0 0 0 1076 562 636 334 0 0
+node "Clk" 1 5844 1 -4 v 0 0 0 0 0 0 0 0 0 0 0 0 104 68 416 224 0 0
+node "m1_174_128#" 1 7948 174 128 v 0 0 0 0 0 0 0 0 0 0 0 0 140 78 104 60 0 0
+node "a_413_n15#" 272 0 413 -15 ndiff 64 56 0 0 0 0 0 0 0 0 0 0 276 158 0 0 0 0
+node "a_397_n23#" 271 0 397 -23 ndiff 64 56 0 0 0 0 0 0 0 0 0 0 136 84 80 48 0 0
+node "a_325_n18#" 40 0 325 -18 ndiff 24 20 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "sel1b" 108 836 459 -18 ndiff 20 18 20 18 0 0 0 0 0 0 0 0 144 80 168 92 0 0
+node "a_430_14#" 164 0 430 14 pdiff 0 0 44 30 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_409_14#" 119 0 409 14 pdiff 0 0 8 12 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_397_14#" 119 0 397 14 pdiff 0 0 8 12 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "xout" 239 39584 365 -18 ndiff 44 38 20 18 0 0 0 0 0 0 0 0 1032 532 324 170 0 0
+node "a_373_14#" 89 0 373 14 pdiff 0 0 24 20 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_365_14#" 89 0 365 14 pdiff 0 0 24 20 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "sign" 622 836 394 1 pc 0 0 0 0 124 118 0 0 0 0 0 0 36 26 156 104 0 0
+node "start" 2537 21788 376 1 pc 0 0 0 0 468 450 0 0 0 0 0 0 428 254 1084 606 0 0
+node "a_278_n10#" 269 0 278 -10 ndc 60 54 0 0 0 0 0 0 0 0 0 0 240 128 0 0 0 0
+node "shiftb" 108 836 349 -18 ndiff 20 18 20 18 0 0 0 0 0 0 0 0 144 80 156 86 0 0
+node "a_301_14#" 89 0 301 14 pdiff 0 0 24 20 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "sel1" 806 37400 285 -10 ndiff 20 18 56 36 102 102 0 0 0 0 0 0 816 434 816 424 0 0
+node "a_245_14#" 74 0 245 14 pdiff 0 0 20 18 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_n11_n18#" 109 4940 -11 -18 ndiff 20 18 20 18 0 0 0 0 0 0 0 0 144 80 496 256 0 0
+node "shift" 602 836 325 14 pdiff 20 18 24 20 100 94 0 0 0 0 0 0 208 112 156 86 0 0
+node "add" 1180 34134 224 -18 ndiff 20 18 20 18 197 192 0 0 0 0 0 0 799 434 744 404 0 0
+node "a_208_n18#" 1849 45832 208 -18 ndiff 20 18 20 18 338 318 0 0 0 0 0 0 1060 570 720 392 0 0
+node "sel0" 492 1748 269 -18 ndiff 20 18 20 18 84 78 0 0 0 0 0 0 176 96 232 124 0 0
+equiv "sel0" "loadb"
+node "sel0b" 609 1748 245 -18 ndiff 24 20 24 20 100 94 0 0 0 0 0 0 208 112 232 124 0 0
+equiv "sel0b" "load"
+node "addb" 2196 69720 218 0 pc 0 0 0 0 414 394 0 0 0 0 0 0 1164 632 1768 932 0 0
+equiv "addb" "inbit"
+equiv "addb" "y"
+node "reset" 482 57896 -18 -1 pc 0 0 0 0 100 94 0 0 0 0 0 0 1068 558 508 262 0 0
+node "yout" 913 42652 388 21 pc 24 20 64 56 104 74 0 0 0 0 0 0 982 528 537 292 0 0
+node "x" 1865 80358 202 0 pc 0 0 0 0 349 334 0 0 0 0 0 0 1328 704 1048 564 0 0
+node "Gnd" 3841 2904 201 -31 pw 268 238 352 248 0 0 0 0 0 0 0 0 1728 872 60 38 0 0
+node "w_n18_n31#" 184 20492 -18 -31 pw 20 18 40 28 0 0 0 0 0 0 0 0 584 300 0 0 0 0
+node "Vdd" 31696 2904 201 12 nw 268 206 264 236 0 0 0 0 0 0 0 0 1748 896 292 154 7318 620
+node "w_n18_n1#" 2728 0 -18 -1 nw 40 28 20 18 0 0 0 0 0 0 0 0 156 86 0 0 992 126
+cap "resetb" "xout" 720
+cap "sel1b" "Vdd" 2256
+cap "sel1" "a_278_n10#" 720
+cap "start" "a_413_n15#" 450
+cap "reset" "a_n11_n18#" 38
+cap "Vdd" "shiftb" 2256
+cap "a_278_n10#" "addb" 2160
+cap "sel1" "Vdd" 10430
+cap "a_208_n18#" "a_278_n10#" 240
+cap "Vdd" "addb" 32685
+cap "a_208_n18#" "Vdd" 28057
+cap "sel1" "addb" 1440
+cap "a_208_n18#" "sel1" 1072
+cap "shift" "Gnd" 13168
+cap "yout" "Vdd" 14990
+cap "yin" "Clk" 720
+cap "yout" "sel1" 630
+cap "start" "sign" 180
+cap "a_365_14#" "add" 352
+cap "start" "Gnd" 28648
+cap "a_208_n18#" "addb" 2160
+cap "start" "a_397_n23#" 152
+cap "yout" "addb" 796
+cap "a_208_n18#" "yout" 228
+cap "w_n18_n1#" "reset" 5386
+cap "xin" "reset" 720
+cap "x" "Gnd" 13143
+cap "add" "Gnd" 15663
+cap "xout" "Gnd" 5922
+cap "w_n18_n31#" "reset" 4450
+cap "yin" "xin" 1440
+cap "a_413_n15#" "addb" 180
+cap "yout" "a_413_n15#" 1170
+cap "add" "shift" 720
+cap "sel1b" "Gnd" 4412
+cap "a_278_n10#" "Gnd" 8272
+cap "xout" "start" 960
+cap "shiftb" "Gnd" 4412
+cap "sign" "Vdd" 5742
+cap "Vdd" "Gnd" 2924
+cap "start" "a_430_14#" 176
+cap "sel1" "Gnd" 11366
+cap "sel0" "Vdd" 7617
+cap "Gnd" "addb" 25677
+cap "sel0b" "Vdd" 7234
+cap "a_208_n18#" "Gnd" 18871
+cap "x" "add" 1440
+cap "a_208_n18#" "a_397_n23#" 152
+cap "yout" "Gnd" 2118
+cap "sel0" "addb" 720
+cap "Clk" "a_n11_n18#" 720
+cap "sel0b" "addb" 240
+cap "xout" "add" 420
+cap "yin" "reset" 2160
+cap "a_373_14#" "start" 352
+cap "a_245_14#" "addb" 176
+cap "x" "yin" 720
+cap "Vdd" "shift" 6068
+cap "m1_174_128#" "yin" 720
+cap "Clk" "w_n18_n1#" 4976
+cap "start" "Vdd" 31135
+cap "xin" "Clk" 720
+cap "shift" "addb" 240
+cap "start" "addb" 1980
+cap "a_208_n18#" "start" 1440
+cap "a_278_n10#" "add" 240
+cap "yout" "start" 3428
+cap "w_n18_n1#" "a_n11_n18#" 3428
+cap "x" "Vdd" 21312
+cap "x" "sel1" 720
+cap "a_413_n15#" "Gnd" 9729
+cap "Vdd" "add" 20047
+cap "a_397_n23#" "a_413_n15#" 720
+cap "sel1" "add" 720
+cap "xout" "Vdd" 3910
+cap "x" "addb" 2854
+cap "xout" "sel1" 720
+cap "x" "a_208_n18#" 1440
+cap "w_n18_n31#" "Clk" 564
+cap "add" "addb" 2520
+cap "a_208_n18#" "add" 1440
+cap "xout" "addb" 720
+cap "a_301_14#" "add" 352
+cap "a_208_n18#" "xout" 720
+cap "a_430_14#" "addb" 352
+cap "sign" "Gnd" 9206
+cap "a_208_n18#" "a_409_14#" 176
+cap "sign" "a_397_n23#" 1980
+cap "w_n18_n31#" "a_n11_n18#" 5250
+cap "a_397_n23#" "Gnd" 3876
+cap "resetb" "x" 720
+cap "a_325_n18#" "shift" 352
+cap "Clk" "reset" 720
+cap "sel0" "Gnd" 8055
+cap "sel0b" "Gnd" 13734
+device mosfet nfet 435 -23 436 -22 2 4 "Gnd" "start" 4 0 "yout" 4 0 "a_413_n15#" 4 0
+device mosfet nfet 427 -23 428 -22 2 4 "Gnd" "addb" 4 0 "a_413_n15#" 4 0 "yout" 4 0
+device mosfet nfet 403 -23 404 -22 2 4 "Gnd" "sign" 4 0 "a_397_n23#" 4 0 "Gnd" 4 0
+device mosfet nfet 395 -23 396 -22 2 4 "Gnd" "start" 4 0 "Gnd" 4 0 "a_397_n23#" 4 0
+device mosfet nfet 457 -18 458 -17 2 4 "Gnd" "sel1" 4 0 "Gnd" 4 0 "sel1b" 4 0
+device mosfet nfet 419 -15 420 -14 2 4 "Gnd" "start" 4 0 "a_413_n15#" 4 0 "a_397_n23#" 4 0
+device mosfet nfet 411 -15 412 -14 2 4 "Gnd" "a_208_n18#" 4 0 "a_397_n23#" 4 0 "a_413_n15#" 4 0
+device mosfet nfet 379 -18 380 -17 2 4 "Gnd" "start" 4 0 "Gnd" 4 0 "xout" 4 0
+device mosfet nfet 371 -18 372 -17 2 4 "Gnd" "add" 4 0 "xout" 4 0 "Gnd" 4 0
+device mosfet nfet 363 -18 364 -17 2 4 "Gnd" "x" 4 0 "Gnd" 4 0 "xout" 4 0
+device mosfet nfet 347 -18 348 -17 2 4 "Gnd" "shift" 4 0 "Gnd" 4 0 "shiftb" 4 0
+device mosfet nfet 331 -18 332 -17 2 4 "Gnd" "addb" 4 0 "a_325_n18#" 4 0 "shift" 4 0
+device mosfet nfet 323 -18 324 -17 2 4 "Gnd" "a_208_n18#" 4 0 "Gnd" 4 0 "a_325_n18#" 4 0
+device mosfet nfet 307 -18 308 -17 2 4 "Gnd" "add" 4 0 "Gnd" 4 0 "a_278_n10#" 4 0
+device mosfet nfet 299 -18 300 -17 2 4 "Gnd" "a_208_n18#" 4 0 "a_278_n10#" 4 0 "Gnd" 4 0
+device mosfet nfet 267 -18 268 -17 2 4 "Gnd" "sel0b" 4 0 "Gnd" 4 0 "sel0" 4 0
+device mosfet nfet 251 -18 252 -17 2 4 "Gnd" "addb" 4 0 "sel0b" 4 0 "Gnd" 4 0
+device mosfet nfet 243 -18 244 -17 2 4 "Gnd" "x" 4 0 "Gnd" 4 0 "sel0b" 4 0
+device mosfet nfet 222 -18 223 -17 2 4 "Gnd" "addb" 4 0 "Gnd" 4 0 "add" 4 0
+device mosfet nfet 206 -18 207 -17 2 4 "Gnd" "x" 4 0 "Gnd" 4 0 "a_208_n18#" 4 0
+device mosfet nfet -13 -18 -12 -17 2 4 "w_n18_n31#" "reset" 4 0 "w_n18_n31#" 4 0 "a_n11_n18#" 4 0
+device mosfet pfet 457 14 458 15 2 4 "Vdd" "sel1" 4 0 "Vdd" 4 0 "sel1b" 4 0
+device mosfet pfet 441 14 442 15 2 4 "Vdd" "start" 4 0 "a_430_14#" 4 0 "Vdd" 4 0
+device mosfet pfet 428 14 429 15 2 4 "Vdd" "addb" 4 0 "yout" 4 0 "a_430_14#" 4 0
+device mosfet pfet 411 14 412 15 2 4 "Vdd" "start" 4 0 "a_409_14#" 4 0 "yout" 4 0
+device mosfet pfet 407 14 408 15 2 4 "Vdd" "a_208_n18#" 4 0 "Vdd" 4 0 "a_409_14#" 4 0
+device mosfet pfet 399 14 400 15 2 4 "Vdd" "sign" 4 0 "a_397_14#" 4 0 "Vdd" 4 0
+device mosfet pfet 395 14 396 15 2 4 "Vdd" "start" 4 0 "yout" 4 0 "a_397_14#" 4 0
+device mosfet pfet 379 14 380 15 2 4 "Vdd" "start" 4 0 "a_373_14#" 4 0 "xout" 4 0
+device mosfet pfet 371 14 372 15 2 4 "Vdd" "add" 4 0 "a_365_14#" 4 0 "a_373_14#" 4 0
+device mosfet pfet 363 14 364 15 2 4 "Vdd" "x" 4 0 "Vdd" 4 0 "a_365_14#" 4 0
+device mosfet nfet 283 -10 284 -9 2 4 "Gnd" "sel0" 4 0 "a_278_n10#" 4 0 "sel1" 4 0
+device mosfet pfet 347 14 348 15 2 4 "Vdd" "shift" 4 0 "Vdd" 4 0 "shiftb" 4 0
+device mosfet pfet 331 14 332 15 2 4 "Vdd" "addb" 4 0 "shift" 4 0 "Vdd" 4 0
+device mosfet pfet 323 14 324 15 2 4 "Vdd" "a_208_n18#" 4 0 "Vdd" 4 0 "shift" 4 0
+device mosfet pfet 307 14 308 15 2 4 "Vdd" "add" 4 0 "a_301_14#" 4 0 "Vdd" 4 0
+device mosfet pfet 299 14 300 15 2 4 "Vdd" "a_208_n18#" 4 0 "sel1" 4 0 "a_301_14#" 4 0
+device mosfet pfet 283 14 284 15 2 4 "Vdd" "sel0" 4 0 "Vdd" 4 0 "sel1" 4 0
+device mosfet pfet 267 14 268 15 2 4 "Vdd" "sel0b" 4 0 "Vdd" 4 0 "sel0" 4 0
+device mosfet pfet 250 14 251 15 2 4 "Vdd" "addb" 4 0 "a_245_14#" 4 0 "sel0b" 4 0
+device mosfet pfet 243 14 244 15 2 4 "Vdd" "x" 4 0 "Vdd" 4 0 "a_245_14#" 4 0
+device mosfet pfet 222 14 223 15 2 4 "Vdd" "addb" 4 0 "Vdd" 4 0 "add" 4 0
+device mosfet pfet 206 14 207 15 2 4 "Vdd" "x" 4 0 "Vdd" 4 0 "a_208_n18#" 4 0
+device mosfet pfet -13 14 -12 15 2 4 "w_n18_n1#" "reset" 4 0 "w_n18_n1#" 4 0 "a_n11_n18#" 4 0
+cap "reg1_0/Clk" "reg1_0/w_n12_n28#" 152
+cap "reg1_0/Clk" "reg1_0/w_n12_n58#" 456
+cap "reg1_0/Rb" "reg1_0/w_n12_n28#" 532
+cap "reg1_1/Qb" "reg1_0/Rb" 266
+cap "reg1_0/Clk" "x" 720
+cap "x" "reg1_0/w_n12_n28#" 1080
+cap "reg1_0/w_n12_n28#" "reg1_0/Rb" 2092
+cap "x" "reg1_0/Rb" 900
+cap "reg1_0/w_n12_n58#" "x" 720
+cap "reg1_1/Rb" "x" 540
+cap "x" "reg1_1/w_n12_n28#" 360
+merge "transgate_1/a_6_n19#" "transgate_0/a_6_n19#" -2660 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -28 -46 0 0
+merge "transgate_0/a_6_n19#" "reg1_1/Rb"
+merge "reg1_1/Rb" "reg1_0/Rb"
+merge "reg1_0/Rb" "transgate_2/a_n2_9#"
+merge "transgate_2/a_n2_9#" "transgate_3/a_n2_9#"
+merge "transgate_3/a_n2_9#" "a_n11_n18#"
+merge "a_n11_n18#" "resetb"
+merge "transgate_0/a_1_2#" "xout" -6392 0 0 0 0 0 0 0 0 0 0 0 0 -136 -80 0 0 0 0
+merge "reg1_1/w_n12_n58#" "reg1_0/w_n12_n58#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 0 0 0 0
+merge "reg1_0/w_n12_n58#" "transgate_2/a_1_2#"
+merge "transgate_2/a_1_2#" "transgate_3/a_1_2#"
+merge "transgate_3/a_1_2#" "w_n18_n31#"
+merge "w_n18_n31#" "Gnd"
+merge "reg1_1/w_n12_n28#" "reg1_0/w_n12_n28#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 0 0 0 0
+merge "reg1_0/w_n12_n28#" "w_n18_n1#"
+merge "w_n18_n1#" "Vdd"
+merge "transgate_1/a_n6_2#" "reg1_1/D" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -16 0 -8 0 0
+merge "reg1_1/D" "transgate_2/a_n6_2#"
+merge "transgate_2/a_n6_2#" "yin"
+merge "transgate_0/a_n6_2#" "reg1_0/D" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -16 0 -8 0 0
+merge "reg1_0/D" "transgate_3/a_n6_2#"
+merge "transgate_3/a_n6_2#" "xin"
+merge "reg1_1/Clk" "reg1_0/Clk" -912 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -16 0 0
+merge "reg1_0/Clk" "Clk"
+merge "reg1_1/Q" "addb" -380 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -20 -22 0 0
+merge "transgate_1/a_n2_9#" "transgate_0/a_n2_9#" -752 0 0 0 0 0 0 0 0 0 0 0 0 -16 -24 0 -8 0 0
+merge "transgate_0/a_n2_9#" "transgate_2/a_6_n19#"
+merge "transgate_2/a_6_n19#" "transgate_3/a_6_n19#"
+merge "transgate_3/a_6_n19#" "reset"
+merge "reset" "m1_174_128#"
+merge "transgate_1/a_1_2#" "yout" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 0 0 0 0
+merge "reg1_0/Q" "x" -18857 0 0 0 0 0 0 0 0 0 0 0 0 -305 -256 -294 -238 0 0

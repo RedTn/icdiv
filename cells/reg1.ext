@@ -1,0 +1,59 @@
+timestamp 1384799288
+version 7.5
+tech scmos
+style lambda=1.0(scna20_orb)
+scale 1000 1 100
+resistclasses 26670 59550 23860 19690 27260 2000000 49 26 2505830
+node "a_4_n51#" 93 0 4 -51 ndiff 56 36 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_40_n51#" 194 0 40 -51 ndiff 72 52 0 0 0 0 0 0 0 0 0 0 56 36 0 0 0 0
+node "a_n12_n51#" 335 0 -12 -51 ndc 20 18 60 38 52 34 0 0 0 0 0 0 216 124 140 78 0 0
+node "a_n3_n15#" 74 0 -3 -15 pdiff 0 0 20 18 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "Clk" 707 1216 2 -53 p 0 0 0 0 142 134 0 0 0 0 0 0 72 52 388 202 0 0
+node "Q" 109 304 64 -37 ndiff 20 18 20 18 0 0 0 0 0 0 0 0 184 100 212 114 0 0
+node "D" 596 304 -7 -53 p 0 0 0 0 108 108 0 0 0 0 0 0 35 28 180 98 0 0
+node "Qb" 1014 304 30 -7 pdiff 36 26 48 40 159 130 0 0 0 0 0 0 228 130 200 108 0 0
+node "Rb" 189 1216 42 -15 pc 0 0 0 0 40 40 0 0 0 0 0 0 48 32 392 204 0 0
+node "a_4_n23#" 657 0 4 -23 pdiff 28 22 20 18 178 132 0 0 0 0 0 0 212 122 0 0 0 0
+node "w_n12_n58#" 428 3008 -12 -58 pw 72 60 40 28 0 0 0 0 0 0 0 0 534 276 0 0 0 0
+node "w_n12_n28#" 7553 3008 -12 -28 nw 32 24 136 108 0 0 0 0 0 0 0 0 600 308 0 0 2592 226
+cap "Rb" "a_n12_n51#" 720
+cap "w_n12_n58#" "Clk" 13050
+cap "D" "w_n12_n58#" 5478
+cap "Rb" "Q" 720
+cap "Rb" "w_n12_n28#" 9941
+cap "w_n12_n58#" "a_40_n51#" 1128
+cap "a_n12_n51#" "w_n12_n28#" 2444
+cap "w_n12_n58#" "Qb" 7675
+cap "w_n12_n58#" "a_4_n23#" 8802
+cap "Q" "w_n12_n28#" 3948
+cap "a_n12_n51#" "Clk" 872
+cap "D" "a_n12_n51#" 152
+cap "Q" "Clk" 796
+cap "Clk" "w_n12_n28#" 5372
+cap "Rb" "Qb" 2265
+cap "D" "w_n12_n28#" 10592
+cap "Rb" "a_4_n23#" 3140
+cap "Q" "a_40_n51#" 720
+cap "a_n12_n51#" "a_4_n23#" 480
+cap "D" "Clk" 152
+cap "Q" "a_4_n23#" 773
+cap "w_n12_n28#" "Qb" 18128
+cap "a_4_n23#" "w_n12_n28#" 12896
+cap "a_n12_n51#" "w_n12_n58#" 10572
+cap "Q" "w_n12_n58#" 6555
+cap "Clk" "Qb" 1404
+cap "a_4_n23#" "Clk" 720
+cap "D" "Qb" 66
+cap "D" "a_4_n23#" 209
+device mosfet nfet 38 -51 39 -50 2 4 "w_n12_n58#" "a_4_n23#" 4 0 "w_n12_n58#" 4 0 "a_40_n51#" 4 0
+device mosfet nfet 18 -51 19 -50 4 4 "w_n12_n58#" "a_n12_n51#" 8 0 "a_4_n51#" 4 0 "a_4_n23#" 4 0
+device mosfet nfet 2 -51 3 -50 2 4 "w_n12_n58#" "Clk" 4 0 "w_n12_n58#" 4 0 "a_4_n51#" 4 0
+device mosfet nfet -7 -51 -6 -50 2 4 "w_n12_n58#" "D" 4 0 "a_n12_n51#" 4 0 "w_n12_n58#" 4 0
+device mosfet nfet 42 -41 43 -40 2 4 "w_n12_n58#" "Clk" 4 0 "Qb" 4 0 "a_40_n51#" 4 0
+device mosfet nfet 61 -37 62 -36 3 4 "w_n12_n58#" "Qb" 6 0 "w_n12_n58#" 4 0 "Q" 4 0
+device mosfet pfet 2 -23 3 -22 2 4 "w_n12_n28#" "Clk" 4 0 "w_n12_n28#" 4 0 "a_4_n23#" 4 0
+device mosfet pfet 2 -15 3 -14 2 4 "w_n12_n28#" "Clk" 4 0 "a_n3_n15#" 4 0 "a_n12_n51#" 4 0
+device mosfet pfet -5 -15 -4 -14 2 4 "w_n12_n28#" "D" 4 0 "w_n12_n28#" 4 0 "a_n3_n15#" 4 0
+device mosfet pfet 62 -7 63 -6 2 4 "w_n12_n28#" "Qb" 4 0 "w_n12_n28#" 4 0 "Q" 4 0
+device mosfet pfet 46 -7 47 -6 2 4 "w_n12_n28#" "Rb" 4 0 "w_n12_n28#" 4 0 "Qb" 4 0
+device mosfet pfet 26 -7 27 -6 4 4 "w_n12_n28#" "a_4_n23#" 8 0 "w_n12_n28#" 4 0 "Qb" 4 0

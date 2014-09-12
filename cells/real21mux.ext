@@ -1,0 +1,33 @@
+timestamp 1385276660
+version 7.5
+tech scmos
+style lambda=1.0(scna20_orb)
+scale 1000 1 100
+resistclasses 26670 59550 23860 19690 27260 2000000 49 26 2505830
+use 2to1muxfixed 2to1muxfixed_0 1 0 31 0 1 35
+use 2to1muxfixed 2to1muxfixed_1 1 0 31 0 1 -38
+node "m2_49_n11#" 0 2052 49 -11 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 108 66 0 0
+node "m2_7_34#" 0 76 7 34 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 20 18 0 0
+node "m2_95_42#" 0 760 95 42 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 40 28 0 0
+node "m1_n12_n68#" 1 24487 -12 -68 m1 0 0 0 0 0 0 0 0 0 0 0 0 521 192 0 0 0 0
+node "m1_100_31#" 1 8758 100 31 v 0 0 0 0 0 0 0 0 0 0 0 0 97 64 276 178 0 0
+node "m1_4_42#" 1 11084 4 42 v 0 0 0 0 0 0 0 0 0 0 0 0 157 74 239 136 0 0
+node "m1_n12_54#" 1 9741 -12 54 v 0 0 0 0 0 0 0 0 0 0 0 0 88 58 511 186 0 0
+cap "m1_n12_n68#" "m1_n12_54#" 7020
+cap "m1_4_42#" "m2_7_34#" 720
+cap "2to1muxfixed_0/Gnd" "2to1muxfixed_1/a_19_n1#" 720
+cap "2to1muxfixed_1/Vdd" "2to1muxfixed_1/a_19_n1#" 720
+cap "2to1muxfixed_0/a_19_n1#" "m2_7_34#" 180
+merge "2to1muxfixed_0/Vdd" "2to1muxfixed_1/Vdd" -3384 0 0 0 0 0 0 0 0 0 0 0 0 -72 -60 0 0 0 0
+merge "2to1muxfixed_1/Vdd" "m1_n12_54#"
+merge "2to1muxfixed_1/Gnd" "2to1muxfixed_0/Gnd" -188 0 0 0 0 0 0 0 0 0 0 0 0 -4 -18 0 0 0 0
+merge "2to1muxfixed_0/Gnd" "m1_n12_n68#"
+merge "2to1muxfixed_0/a_19_n1#" "2to1muxfixed_1/a_19_n1#" -152 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 -12 0 0
+merge "2to1muxfixed_1/a_19_n1#" "m1_4_42#"
+merge "m1_4_42#" "m2_95_42#"
+merge "2to1muxfixed_0/load" "m2_7_34#" -684 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -36 -34 0 0
+merge "m2_7_34#" "2to1muxfixed_1/load"
+merge "2to1muxfixed_1/load" "m1_100_31#"
+merge "2to1muxfixed_1/Qb" "2to1muxfixed_1/divisor" -1140 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -60 -54 0 0
+merge "2to1muxfixed_1/divisor" "2to1muxfixed_0/D"
+merge "2to1muxfixed_0/D" "m2_49_n11#"

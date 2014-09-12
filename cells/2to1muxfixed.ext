@@ -1,0 +1,53 @@
+timestamp 1384797888
+version 7.5
+tech scmos
+style lambda=1.0(scna20_orb)
+scale 1000 1 100
+resistclasses 26670 59550 23860 19690 27260 2000000 49 26 2505830
+node "a_10_n14#" 378 0 10 -14 ndc 80 72 0 0 0 0 0 0 0 0 0 0 232 128 0 0 0 0
+node "divisor" 263 5948 -8 -7 pc 0 0 0 0 60 56 0 0 0 0 0 0 132 74 200 108 0 0
+node "a_33_7#" 89 0 33 7 pdiff 0 0 24 20 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "D" 130 304 17 -14 ndiff 24 20 24 20 0 0 0 0 0 0 0 0 123 74 116 66 0 0
+node "a_14_7#" 134 0 14 7 pdiff 0 0 36 26 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "Qb" 461 8345 39 -24 p 0 0 0 0 95 90 0 0 0 0 0 0 164 90 375 204 0 0
+node "load" 442 2413 31 -24 p 0 0 0 0 90 86 0 0 0 0 0 0 36 28 388 202 0 0
+node "a_19_n1#" 347 2223 19 -1 pc 0 0 0 0 74 70 0 0 0 0 0 0 63 44 384 216 0 0
+node "a_n2_n14#" 597 0 -2 -14 ndiff 20 18 20 18 98 94 0 0 0 0 0 0 120 76 0 0 0 0
+node "Gnd" 624 7708 -9 -30 pw 44 38 124 70 0 0 0 0 0 0 0 0 484 250 0 0 0 0
+node "Vdd" 5657 7708 -9 -5 nw 224 120 64 56 0 0 0 0 0 0 0 0 592 304 0 0 1680 172
+cap "Vdd" "load" 7704
+cap "Gnd" "divisor" 2872
+cap "divisor" "load" 758
+cap "Gnd" "a_n2_n14#" 5400
+cap "a_n2_n14#" "load" 2046
+cap "a_10_n14#" "Qb" 1920
+cap "Gnd" "Qb" 8301
+cap "a_19_n1#" "Vdd" 11727
+cap "Qb" "load" 1341
+cap "a_19_n1#" "a_33_7#" 528
+cap "a_10_n14#" "D" 720
+cap "Gnd" "D" 2832
+cap "a_19_n1#" "divisor" 540
+cap "D" "load" 720
+cap "a_19_n1#" "a_14_7#" 1167
+cap "Gnd" "a_10_n14#" 7050
+cap "Vdd" "divisor" 7140
+cap "a_10_n14#" "load" 240
+cap "Gnd" "load" 4526
+cap "a_19_n1#" "Qb" 540
+cap "a_n2_n14#" "Vdd" 7310
+cap "Vdd" "Qb" 8901
+cap "a_19_n1#" "D" 1076
+cap "Vdd" "D" 2491
+cap "a_19_n1#" "Gnd" 2146
+cap "a_19_n1#" "load" 872
+device mosfet nfet 39 -22 40 -21 2 4 "Gnd" "Qb" 4 0 "Gnd" 4 0 "a_10_n14#" 4 0
+device mosfet nfet 31 -22 32 -21 2 4 "Gnd" "load" 4 0 "a_10_n14#" 4 0 "Gnd" 4 0
+device mosfet nfet 23 -14 24 -13 2 4 "Gnd" "a_19_n1#" 4 0 "D" 4 0 "a_10_n14#" 4 0
+device mosfet nfet 15 -14 16 -13 2 4 "Gnd" "a_n2_n14#" 4 0 "a_10_n14#" 4 0 "D" 4 0
+device mosfet nfet -4 -14 -3 -13 2 4 "Gnd" "divisor" 4 0 "Gnd" 4 0 "a_n2_n14#" 4 0
+device mosfet pfet -4 0 -3 1 2 4 "Vdd" "divisor" 4 0 "Vdd" 4 0 "a_n2_n14#" 4 0
+device mosfet pfet 39 7 40 8 2 4 "Vdd" "Qb" 4 0 "a_33_7#" 4 0 "Vdd" 4 0
+device mosfet pfet 31 7 32 8 2 4 "Vdd" "load" 4 0 "D" 4 0 "a_33_7#" 4 0
+device mosfet pfet 23 7 24 8 2 4 "Vdd" "a_19_n1#" 4 0 "a_14_7#" 4 0 "D" 4 0
+device mosfet pfet 12 7 13 8 2 4 "Vdd" "a_n2_n14#" 4 0 "Vdd" 4 0 "a_14_7#" 4 0

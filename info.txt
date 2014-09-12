@@ -1,0 +1,1 @@
+3) NOTE: the divider.cmd, we had to set reset to low to work; also for datapath: you need load,add,sel,reset as well as their inverse; dflipflop.mag -> reg1.mag, addsub.mag -> addsub1.mag, shiftv2.mag -> shift1.mag, highdata.mag -> dbithigh.mag, lowdata.mag -> dbitlow.mag, controller_v2.mag -> controller.mag; 2to1muxfixed to 

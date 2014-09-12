@@ -1,0 +1,33 @@
+magic
+tech scmos
+timestamp 1385333955
+<< metal1 >>
+rect -8 69 -4 73
+rect -35 65 -4 69
+rect 19 65 50 69
+rect -8 0 -4 38
+rect 19 28 23 65
+rect -8 -4 23 0
+rect -8 -8 -4 -4
+<< metal2 >>
+rect -35 53 50 57
+rect -35 45 50 49
+rect -35 16 50 20
+rect -35 8 50 12
+use transgate  transgate_1
+timestamp 1384720590
+transform 0 1 -3 -1 0 55
+box -10 -24 18 18
+use transgate  transgate_0
+timestamp 1384720590
+transform 0 1 24 -1 0 18
+box -10 -24 18 18
+<< labels >>
+rlabel metal1 19 65 50 69 3 inbit
+rlabel metal2 -35 16 50 20 3 shiftb
+rlabel metal2 -35 8 50 12 3 shift
+rlabel metal2 -35 45 50 49 3 shiftb2
+rlabel metal2 -35 53 50 57 3 shift2
+rlabel space -8 -8 -4 45 5 shiftout
+rlabel space -8 57 -4 73 1 shiftin
+<< end >>

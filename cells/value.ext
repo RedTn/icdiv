@@ -1,0 +1,119 @@
+timestamp 1385973147
+version 7.5
+tech scmos
+style lambda=1.0(scna20_orb)
+scale 1000 1 100
+resistclasses 26670 59550 23860 19690 27260 2000000 49 26 2505830
+use reg1 reg1_0 1 0 20 0 1 62
+use reg1 reg1_1 1 0 20 0 1 -5
+use reg1 reg1_2 1 0 20 0 1 -73
+use reg1 reg1_3 1 0 20 0 1 -142
+use reg1 reg1_4 1 0 20 0 1 -211
+use reg1 reg1_5 1 0 20 0 1 -279
+use reg1 reg1_6 1 0 20 0 1 -346
+use reg1 reg1_7 1 0 20 0 1 -415
+use reg1 reg1_8 1 0 20 0 1 -484
+use reg1 reg1_9 1 0 20 0 1 -553
+use reg1 reg1_10 1 0 20 0 1 -622
+use reg1 reg1_11 1 0 20 0 1 -690
+use reg1 reg1_12 1 0 20 0 1 -759
+use reg1 reg1_13 1 0 20 0 1 -827
+use reg1 reg1_14 1 0 20 0 1 -896
+use reg1 reg1_15 1 0 20 0 1 -965
+use reg1 reg1_16 1 0 20 0 1 -1033
+use reg1 reg1_17 1 0 20 0 1 -1100
+node "m2_n17_n1131#" 9 103056 -17 -1131 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5696 2856 0 0
+node "m2_92_n507#" 9 101840 92 -507 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5632 2822 0 0
+node "m1_n35_n1158#" 21 324112 -35 -1158 m1 0 0 0 0 0 0 0 0 0 0 0 0 6896 3456 0 0 0 0
+node "m1_92_n622#" 22 341596 92 -622 m1 0 0 0 0 0 0 0 0 0 0 0 0 7268 3642 0 0 0 0
+cap "m1_n35_n1158#" "m2_n17_n1131#" 12240
+cap "m1_92_n622#" "m2_92_n507#" 12240
+merge "reg1_6/D" "reg1_5/Q" -228 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12 -14 0 0
+merge "reg1_0/Rb" "reg1_1/Rb" -1824 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -96 -192 0 0
+merge "reg1_1/Rb" "reg1_2/Rb"
+merge "reg1_2/Rb" "reg1_4/Rb"
+merge "reg1_4/Rb" "reg1_3/Rb"
+merge "reg1_3/Rb" "reg1_5/Rb"
+merge "reg1_5/Rb" "reg1_7/Rb"
+merge "reg1_7/Rb" "reg1_6/Rb"
+merge "reg1_6/Rb" "reg1_8/Rb"
+merge "reg1_8/Rb" "reg1_10/Rb"
+merge "reg1_10/Rb" "reg1_9/Rb"
+merge "reg1_9/Rb" "reg1_11/Rb"
+merge "reg1_11/Rb" "reg1_13/Rb"
+merge "reg1_13/Rb" "reg1_12/Rb"
+merge "reg1_12/Rb" "reg1_14/Rb"
+merge "reg1_14/Rb" "reg1_16/Rb"
+merge "reg1_16/Rb" "reg1_15/Rb"
+merge "reg1_15/Rb" "reg1_17/Rb"
+merge "reg1_17/Rb" "m2_92_n507#"
+merge "reg1_1/Clk" "reg1_0/Clk" -1824 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -96 -192 0 0
+merge "reg1_0/Clk" "reg1_2/Clk"
+merge "reg1_2/Clk" "reg1_4/Clk"
+merge "reg1_4/Clk" "reg1_3/Clk"
+merge "reg1_3/Clk" "reg1_5/Clk"
+merge "reg1_5/Clk" "reg1_7/Clk"
+merge "reg1_7/Clk" "reg1_6/Clk"
+merge "reg1_6/Clk" "reg1_8/Clk"
+merge "reg1_8/Clk" "reg1_10/Clk"
+merge "reg1_10/Clk" "reg1_9/Clk"
+merge "reg1_9/Clk" "reg1_11/Clk"
+merge "reg1_11/Clk" "reg1_13/Clk"
+merge "reg1_13/Clk" "reg1_12/Clk"
+merge "reg1_12/Clk" "reg1_14/Clk"
+merge "reg1_14/Clk" "reg1_15/Clk"
+merge "reg1_15/Clk" "reg1_17/Clk"
+merge "reg1_17/Clk" "reg1_16/Clk"
+merge "reg1_16/Clk" "m2_n17_n1131#"
+merge "reg1_4/D" "reg1_3/Q" -76 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4 -10 0 0
+merge "reg1_0/w_n12_n58#" "reg1_2/w_n12_n58#" -3008 0 0 0 0 0 0 0 0 0 0 0 0 -64 -176 0 0 0 0
+merge "reg1_2/w_n12_n58#" "reg1_1/w_n12_n58#"
+merge "reg1_1/w_n12_n58#" "reg1_3/w_n12_n58#"
+merge "reg1_3/w_n12_n58#" "reg1_5/w_n12_n58#"
+merge "reg1_5/w_n12_n58#" "reg1_4/w_n12_n58#"
+merge "reg1_4/w_n12_n58#" "reg1_6/w_n12_n58#"
+merge "reg1_6/w_n12_n58#" "reg1_8/w_n12_n58#"
+merge "reg1_8/w_n12_n58#" "reg1_7/w_n12_n58#"
+merge "reg1_7/w_n12_n58#" "reg1_9/w_n12_n58#"
+merge "reg1_9/w_n12_n58#" "reg1_11/w_n12_n58#"
+merge "reg1_11/w_n12_n58#" "reg1_10/w_n12_n58#"
+merge "reg1_10/w_n12_n58#" "reg1_12/w_n12_n58#"
+merge "reg1_12/w_n12_n58#" "reg1_14/w_n12_n58#"
+merge "reg1_14/w_n12_n58#" "reg1_13/w_n12_n58#"
+merge "reg1_13/w_n12_n58#" "reg1_15/w_n12_n58#"
+merge "reg1_15/w_n12_n58#" "reg1_17/w_n12_n58#"
+merge "reg1_17/w_n12_n58#" "reg1_16/w_n12_n58#"
+merge "reg1_16/w_n12_n58#" "m1_n35_n1158#"
+merge "reg1_0/w_n12_n28#" "reg1_1/w_n12_n28#" -7144 0 0 0 0 0 0 0 0 0 0 0 0 -152 -220 0 0 0 0
+merge "reg1_1/w_n12_n28#" "reg1_3/w_n12_n28#"
+merge "reg1_3/w_n12_n28#" "reg1_2/w_n12_n28#"
+merge "reg1_2/w_n12_n28#" "reg1_4/w_n12_n28#"
+merge "reg1_4/w_n12_n28#" "reg1_6/w_n12_n28#"
+merge "reg1_6/w_n12_n28#" "reg1_5/w_n12_n28#"
+merge "reg1_5/w_n12_n28#" "reg1_7/w_n12_n28#"
+merge "reg1_7/w_n12_n28#" "reg1_9/w_n12_n28#"
+merge "reg1_9/w_n12_n28#" "reg1_8/w_n12_n28#"
+merge "reg1_8/w_n12_n28#" "reg1_10/w_n12_n28#"
+merge "reg1_10/w_n12_n28#" "reg1_12/w_n12_n28#"
+merge "reg1_12/w_n12_n28#" "reg1_11/w_n12_n28#"
+merge "reg1_11/w_n12_n28#" "reg1_13/w_n12_n28#"
+merge "reg1_13/w_n12_n28#" "reg1_14/w_n12_n28#"
+merge "reg1_14/w_n12_n28#" "reg1_16/w_n12_n28#"
+merge "reg1_16/w_n12_n28#" "reg1_15/w_n12_n28#"
+merge "reg1_15/w_n12_n28#" "reg1_17/w_n12_n28#"
+merge "reg1_17/w_n12_n28#" "m1_92_n622#"
+merge "reg1_14/D" "reg1_13/Q" -76 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4 -10 0 0
+merge "reg1_12/D" "reg1_11/Q" -76 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4 -10 0 0
+merge "reg1_1/D" "reg1_0/Q" -228 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12 -14 0 0
+merge "reg1_8/D" "reg1_7/Q" -76 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4 -10 0 0
+merge "reg1_16/D" "reg1_15/Q" -152 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 -12 0 0
+merge "reg1_5/D" "reg1_4/Q" -152 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 -12 0 0
+merge "reg1_3/D" "reg1_2/Q" -76 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4 -10 0 0
+merge "reg1_13/D" "reg1_12/Q" -152 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 -12 0 0
+merge "reg1_9/D" "reg1_8/Q" -76 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4 -10 0 0
+merge "reg1_11/D" "reg1_10/Q" -152 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 -12 0 0
+merge "reg1_7/D" "reg1_6/Q" -76 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4 -10 0 0
+merge "reg1_17/D" "reg1_16/Q" -228 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12 -14 0 0
+merge "reg1_15/D" "reg1_14/Q" -76 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4 -10 0 0
+merge "reg1_2/D" "reg1_1/Q" -152 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 -12 0 0
+merge "reg1_10/D" "reg1_9/Q" -76 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4 -10 0 0

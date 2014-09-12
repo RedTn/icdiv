@@ -1,0 +1,38 @@
+timestamp 1385275645
+version 7.5
+tech scmos
+style lambda=1.0(scna20_orb)
+scale 1000 1 100
+resistclasses 26670 59550 23860 19690 27260 2000000 49 26 2505830
+use real21mux real21mux_0 1 0 18 0 1 72
+use real21mux real21mux_1 1 0 163 0 1 74
+node "O" 0 1995 211 -14 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 105 52 0 0
+node "s1" 0 4256 259 108 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 224 106 0 0
+node "s1b" 0 2280 264 116 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 120 58 0 0
+node "B" 0 608 220 136 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32 24 0 0
+node "m2_67_n8#" 1 32813 67 -8 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1830 628 0 0
+node "s2" 0 3895 111 105 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 237 118 0 0
+node "s2b" 0 2508 118 114 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 180 72 0 0
+node "A" 0 760 75 136 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 40 28 0 0
+node "C" 0 760 67 135 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 40 28 0 0
+node "GND" 0 16450 109 3 m1 0 0 0 0 0 0 0 0 0 0 0 0 350 114 0 0 0 0
+node "Vdd" 0 16168 113 127 m1 0 0 0 0 0 0 0 0 0 0 0 0 344 102 0 0 0 0
+cap "GND" "m2_67_n8#" 2835
+cap "m2_67_n8#" "Vdd" 1800
+cap "Vdd" "s2" 1440
+cap "Vdd" "s2b" 2160
+cap "real21mux_1/2to1muxfixed_1/Gnd" "real21mux_1/2to1muxfixed_1/D" 45
+merge "real21mux_1/2to1muxfixed_0/divisor" "real21mux_0/2to1muxfixed_1/D" -6232 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -431 -280 0 0
+merge "real21mux_0/2to1muxfixed_1/D" "m2_67_n8#"
+merge "real21mux_1/2to1muxfixed_0/Vdd" "real21mux_0/2to1muxfixed_0/Vdd" -1881 0 0 0 0 0 0 0 0 0 0 0 0 -38 -34 0 0 0 0
+merge "real21mux_0/2to1muxfixed_0/Vdd" "Vdd"
+merge "real21mux_1/m2_95_42#" "s1b" -304 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -16 -16 0 0
+merge "real21mux_1/2to1muxfixed_0/load" "s1" -684 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -36 -26 0 0
+merge "real21mux_0/m2_95_42#" "s2b" -380 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -20 -18 0 0
+merge "real21mux_0/m1_100_31#" "s2" -1007 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -53 -34 0 0
+merge "real21mux_0/2to1muxfixed_0/divisor" "C" -152 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 -12 0 0
+merge "real21mux_1/2to1muxfixed_1/D" "O" -399 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -20 -18 0 0
+merge "real21mux_1/m1_n12_n68#" "real21mux_0/2to1muxfixed_1/Gnd" -2632 0 0 0 0 0 0 0 0 0 0 0 0 -56 -44 0 0 0 0
+merge "real21mux_0/2to1muxfixed_1/Gnd" "GND"
+merge "real21mux_1/2to1muxfixed_0/Qb" "B" -228 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12 -14 0 0
+merge "real21mux_0/2to1muxfixed_0/Qb" "A" -76 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4 -10 0 0
